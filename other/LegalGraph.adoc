@@ -30,22 +30,22 @@ This interactive Neo4j graph tutorial covers exchanges of documents that have le
 == Introduction to Problem
 
 Organizations create large numbers of "legal" documents.  These docs define relationships of the organization with persons outside the organization such as customers, suppliers and regulators, and within the organization such as employees, owners and subsidiaries.
-These docs are usually done as free-standing word processing (Word) or similiar flat-file formats such as PDF.  The docs collectively form a description of the organization, but as a collage rather than a unified picture.  The levels of redundancy and inconsistency are high, as are delays, cost and errors.  
+While there are doc-less solutions to managing some of these relationships (e.g., stock markets and online ordering) organizations still depend on docs for many of their relationships.  Docs are often done as free-standing word processing (Word) or similiar flat-file formats such as PDF.  The docs collectively form a description of the organization, but as a collage rather than a unified picture.  The levels of redundancy and inconsistency are high, as are delays, cost and errors.  
 Companies lose billions in cost, delay, lost opportunities, error and fraud.  In litigation, they spend large sums to organize materials after the fact.  
 '''
 
 == Explanation of Scenario
 
-Most of the problem can be solved by looking beyond the individual documents to the collections of them and the connections among the documents and the connections they form among the persons and things referenced. In other words, to put them in context.  A graph.
+Most of the problem can be solved by looking beyond the individual documents to the collections of them and the connections among them and the persons and things referenced. In other words, to reflect their context in a graph.
 
-The end of this graph is the beginning of the next person's graph.  These edges describe relationships among persons.  They also describe relationships to property.  The legal part can be expressed as relationships among nodes of legal text. 
+The end of one person's graph is the beginning of the next person's.  The edges between these describe relationships among persons and with respect to properties.  The legal nature of these edges can be expressed as relationships among nodes of legal text, a legal "code" in the traditional sense of the word. 
 
 The full solution is a distributed, user-controlled graph, with instances for each user and for resources such as legal codes.  
 === Typical Scenario
 
 In its sales process, an organization repeatedly creates and negotiates complex documents with customers, such as loan, license or leasing agreements.  In some cases it starts from a common master.  In others, where the documentation is managed by outside law firms, the forms may be quite different for similar transactions.  In both situations, there is back and forth with the customer of flat-text formats documents, in successive iterations.  Very large numbers of copies of essentially the same documents are made, a tremendous amount of repetitive reading is done, and all participants usually have access to and have to manage all of the information rather than just what is relevant to them and new. 
 
-In a second, related scenario, organizations seek to have confidential discussions or submit confidential information to one another.  One of them creates a form of agreement that it believes will be competent, favorable to it and roughly acceptable to the other party.  In the same process of iteration as before, lawyers for the two parties go back and forth validating the terms of the agreement.  While the document is much shorter than in the preceding scenario, the delay, aggrevation and potential error are substantial, particularly as the discussions do not themselves generate revenues.  
+In a second, related scenario, organizations seek to have confidential discussions or submit confidential information to one another.  One of them creates a form of agreement that it believes will be competent, favorable to it and roughly acceptable to the other party.  In the same process of iteration as before, lawyers for the two parties go back and forth validating the terms of the agreement.  While the document is much shorter than in the preceding scenario, the delay, aggrevation and potential error are substantial in aggregate, particularly as the discussions do not themselves generate revenues.  
 
 In a third scenario, an organization seeks to enforce one of the agreements above.  Because the text is unique to the transaction, the other party has substantial opportunities to make arguments about the meaning of the text, in good faith or otherwise.  
 
