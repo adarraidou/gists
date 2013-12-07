@@ -38,13 +38,15 @@ Companies lose billions in cost, delay, lost opportunities, error and fraud.  In
 
 == Explanation of Scenario
 
-While no fraud prevention measures can ever be perfect, significant opportunity for improvement lies in looking beyond the individual documents, to the collections of them and the connections that link them.  Often these connections go unnoticed until it is too late — duplicative work is being done, a lesson learned in one context is not applied in another, a needless complexity is being created.
+While no system can be perfect, significant opportunity for improvement lies in looking beyond the individual documents, to the collections of them and the connections that link them.  Often these connections go unnoticed until it is too late — duplicative work is being done, a lesson learned in one context is not applied in another, a needless complexity is being created.
 
 === Typical Scenario
 
 In its sales process, an organization repeatedly creates and negotiates complex documents with customers, such as loan, license or leasing agreements.  In some cases it starts from a common master.  In others, where the documentation is managed by outside law firms, the forms may be quite different for similar transactions.  In both situations, there is back and forth with the customer of flat-text formats documents, in successive iterations.  Very large numbers of copies of essentially the same documents are made, a tremendous amount of repetitive reading is done, and all participants usually have access to and have to manage all of the information rather than just what is relevant to them and new. 
 
 In a related scenario, organizations seek to have confidential discussions or submit confidential information to one another.  One of them creates a form of agreement that it believes will be competent, favorable to it and roughly acceptable to the other party.  In the same process of iteration as before, lawyers for the two parties go back and forth validating the terms of the agreement.  While the document is much shorter than in the preceding scenario, the delay, aggrevation and potential error are substantial, particularly as the discussions do not themselves generate revenues.  
+
+In a third scenario, an organization seeks to enforce one of the agreements above.  Because the text is unique to the transaction, the other party has substantial opportunities to make arguments about the meaning of the text, in good faith or otherwise.  
 
 While the exact details behind each first-party fraud collusion vary from operation to operation, the pattern below illustrates how fraud rings commonly operate:
 
