@@ -38,7 +38,7 @@ Companies lose billions in cost, delay, lost opportunities, error and fraud.  In
 
 == Explanation of Scenario
 
-While no system can be perfect, significant opportunity for improvement lies in looking beyond the individual documents, to the collections of them and the connections that link them.  Often these connections go unnoticed until it is too late — duplicative work is being done, a lesson learned in one context is not applied in another, a needless complexity is being created.
+Most of the problem can be solved by looking beyond the individual documents to the collections of them and the connections they form. In other words, to put them in context. 
 
 === Typical Scenario
 
