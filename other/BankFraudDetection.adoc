@@ -31,15 +31,20 @@ This interactive Neo4j graph tutorial covers bank fraud detection scenarios.
 
 == Introduction to Problem
 
-Banks and Insurance companies lose billions of dollars every year to fraud. Traditional methods of fraud detection play an important role in minimizing these losses. However increasingly sophisticated fraudsters have developed a variety of ways to elude discovery, both by working together, and by leveraging various other means of constructing false identities. 
-
+Organizations have very large numbers of "legal" documents.  These docs define relationships of the organization with persons outside the organization such as customers, suppliers and regulators, and within the organization such as employees, owners and subsidiaries.
+These docs are usually done as free-standing word processing (Word) or similiar flat-file formats such as PDF.  The docs collectively form a description of the organization, but as a kind of collage rather than unified picture.  The levels of redundancy and inconsistency are high, as are delays, cost and errors.  
+Companies lose billions in cost, delay, lost opportunities, error and fraud.  In litigation, they spend large sums to organize materials after the fact.  
 '''
 
 == Explanation of Scenario
 
-While no fraud prevention measures can ever be perfect, significant opportunity for improvement lies in looking beyond the individual data points, to the connections that link them. Oftentimes these connections go unnoticed until it is too late— something that is unfortunate, as these connections oftentimes hold the best clues.
+While no fraud prevention measures can ever be perfect, significant opportunity for improvement lies in looking beyond the individual documents, to the collections of them and the connections that link them.  Often these connections go unnoticed until it is too late — duplicative work is being done, a lesson learned in one context is not applied in another, a needless complexity is being created.
 
 === Typical Scenario
+
+In its sales process, an organization repeatedly creates and negotiates complex documents with customers, such as loan, license or leasing agreements.  In some cases it starts from a common master.  In others, where the documentation is managed by outside law firms, the forms may be quite different for similar transactions.  In both situations, there is back and forth with the customer of flat-text formats documents, in successive iterations.  Very large numbers of copies of essentially the same documents are made, a tremendous amount of repetitive reading is done, and all participants usually have access to and have to manage all of the information rather than just what is relevant to them and new. 
+
+In a related scenario, organizations seek to have confidential discussions or submit confidential information to one another.  One of them creates a form of agreement that it believes will be competent, favorable to it and roughly acceptable to the other party.  In the same process of iteration as before, lawyers for the two parties go back and forth validating the terms of the agreement.  While the document is much shorter than in the preceding scenario, the delay, aggrevation and potential error are substantial, particularly as the discussions do not themselves generate revenues.  
 
 While the exact details behind each first-party fraud collusion vary from operation to operation, the pattern below illustrates how fraud rings commonly operate:
 
