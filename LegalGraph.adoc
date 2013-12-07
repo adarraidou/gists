@@ -32,17 +32,18 @@ Most of the problem can be solved by looking beyond the individual documents to 
 The end of one person's graph is the beginning of the next person's.  The edges between these describe relationships among persons and with respect to properties.  The legal nature of these edges can be expressed as relationships among nodes of legal text, a legal "code" in the traditional sense of the word. 
 
 The full solution is a distributed, user-controlled graph, with instances for each user and for resources such as legal codes.  
-=== Typical Scenario
 
-In its sales process, an organization repeatedly creates and negotiates complex documents with customers, such as loan, license or leasing agreements.  In some cases it starts from a common master.  In others, where the documentation is managed by outside law firms, the forms may be quite different for similar transactions.  In both situations, there is back and forth with the customer of flat-text formats documents, in successive iterations.  Very large numbers of copies of essentially the same documents are made, a tremendous amount of repetitive reading is done, and all participants usually have access to and have to manage all of the information rather than just what is relevant to them and new. 
+=== Typical Scenaria
 
-In a second, related scenario, organizations seek to have confidential discussions or submit confidential information to one another.  One of them creates a form of agreement that it believes will be competent, favorable to it and roughly acceptable to the other party.  In the same process of iteration as before, lawyers for the two parties go back and forth validating the terms of the agreement.  While the document is much shorter than in the preceding scenario, the delay, aggrevation and potential error are substantial in aggregate, particularly as the discussions do not themselves generate revenues.  
+* In its sales process, an organization repeatedly creates and negotiates complex documents with customers, such as loan, license or leasing agreements.  In some cases it starts from a common master.  In others, where the documentation is managed by outside law firms, the forms may be quite different for similar transactions.  In both situations, there is back and forth with the customer of flat-text formats documents, in successive iterations.  Very large numbers of copies of essentially the same documents are made, a tremendous amount of repetitive reading is done, and all participants usually have access to and have to manage all of the information rather than just what is relevant to them and new. 
 
-In a third scenario, an organization seeks to enforce one of the agreements above.  Because the text is unique to the transaction, the other party has substantial opportunities to make arguments about the meaning of the text, in good faith or otherwise.  
+* In a second, related scenario, organizations seek to have confidential discussions or submit confidential information to one another.  One of them creates a form of agreement that it believes will be competent, favorable to it and roughly acceptable to the other party.  In the same process of iteration as before, lawyers for the two parties go back and forth validating the terms of the agreement.  While the document is much shorter than in the preceding scenario, the delay, aggrevation and potential error are substantial in aggregate, particularly as the discussions do not themselves generate revenues.  
 
-In a fourth scenario, an organization or benefactor seeks to improve the efficiency and outcomes for a group of others.  This group might be suppliers, customers, business partners, or category of persons such as entrepreneurs or software engineers. 
+* In a third scenario, an organization seeks to enforce one of the agreements above.  Because the text is unique to the transaction, the other party has substantial opportunities to make arguments about the meaning of the text, in good faith or otherwise.  
 
-In a fifth scenario, a shared administration (agency, court system or hierarchy) seeks to manage decision-making through a system of document filings.  This is often referred to as "bureacracy," which combines the French word for "desk" and the Greek word for "power."  
+* In a fourth scenario, an organization or benefactor seeks to improve the efficiency and outcomes for a group of others.  This group might be suppliers, customers, business partners, or category of persons such as entrepreneurs or software engineers. 
+
+* In a fifth scenario, a shared administration (agency, court system or hierarchy) seeks to manage decision-making through a system of document filings.  This is often referred to as "bureacracy," which combines the French word for "desk" and the Greek word for "power."  
 
 == Explanation of Solution
 
