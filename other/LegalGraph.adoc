@@ -59,7 +59,7 @@ Graph databases offer new methods of expressing relationships.  Asciidoc, HTML a
 
 === How Graph Databases Can Help
 
-Graphs allow flexible, compact expression of complex relationships.  Traversals allow finding relevant information and showing connections.  
+Graphs allow flexible, compact expression of complex relationships.  Traversals allow finding relevant information and showing connections, individual and aggregate.  
 
 === How Asciidocs Can Help
 
