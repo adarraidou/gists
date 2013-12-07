@@ -13,16 +13,7 @@ This interactive Neo4j graph tutorial covers exchanges of documents that have le
 * *Introduction*
 ** <<introduction_to_problem, Introduction to Problem>>
 * *Scenario*
-** <<explanation of scenario, Explanation of Scenario>>
-** <<typical_scenario, Typical Scenario>>
-* *Solution*
-** <<explanation_of_solution, Explanation of Solution>>
-** <<how_graph_databases_can_help, How Graph Databases Can Help>>
-* *Data Model*
-** <<bank_fraud_data_model, TBD Bank Fraud Graph Data Model>>
-* *Database Setup*
-** <<sample_data_set, TBD Sample Data Set>>
-* *Cypher Queries*
+** <<explanation_of_scenario, Explanation of Scenario>>
 
 
 '''
