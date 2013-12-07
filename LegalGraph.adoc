@@ -55,7 +55,7 @@ Graphs allow flexible, compact expression of complex relationships.  Traversals 
 
 === How Asciidocs Can Help
 
-Legal docs are docs.  Docs are documentation.  Documentation is a form of code.  @mojavelinux.  When legal docs are treated as code, the overlaps and inconsistencies can be discovered and managed.
+Legal docs are docs.  Docs are documentation.  Documentation is a form of code.  @mojavelinux.  When legal docs are treated as code, the commonalities and inconsistencies can be discovered, refactored and managed.
 
 === How Repetition Helps Legal Docs
 
