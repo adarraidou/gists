@@ -67,9 +67,8 @@ Legal docs are "run" on gray matter.  Often the grayer (the hair of) the gray ma
 
 
 becomes:
-
+- How to prevent the code from appearing in the background?
 //console
-//hide
 
 [source,cypher]
 
