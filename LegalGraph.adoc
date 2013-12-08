@@ -65,22 +65,6 @@ Legal docs are "run" on gray matter.  Often the grayer (the hair of) the gray ma
 
 == Include a query console
 
-+//console+
-
-becomes:
-
-//console
-
-
-== Define a http://docs.neo4j.org/chunked/snapshot/cypher-query-lang.html[Cypher] query
-
- [source,cypher]
- ----
- CREATE (n{name:'ABA MSPA'})-[r:URL]->(a {name:'http://abanet.org/abastore/index.cfm?section=main&fm=Product.AddToCart&pid=5070636'}), (n)-[r:URL]->(b {name:'http://beta.commonaccord.org/wiki'})
- RETURN n.name, r
- ----
-
-
 
 becomes:
 
