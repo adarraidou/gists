@@ -74,9 +74,10 @@ becomes:
 
 ----
 
- CREATE (n{name:'ABA MSPA'})-[r:URL]->({a:'http://abanet.org/abastore/index.cfm?section=main&fm=Product.AddToCart&pid=5070636', format:'OrderForm'})
-
- RETURN n.name, r
+ CREATE (DocModel{name:'ABA_MSPA'})-[r:URL]->(URL1{href:'abanet.org/abastore/index.cfm?section=main&fm=Product.AddToCart&pid=5070636', format:'OrderForm'})
+ CREATE (URL2 {href:'www.ott.nih.gov/sites/default/files/documents/docs/cda.doc', format:'.Doc'})
+ CREATE (DocModel{name:'NIH_NDA'})-[r:URL]->(URL2)
+ RETURN DocModel.name, r
 
 ----
 
