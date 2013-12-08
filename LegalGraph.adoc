@@ -62,20 +62,6 @@ Legal docs are docs.  Docs are documentation.  Documentation is a form of code. 
 Legal docs are "run" on gray matter.  Often the grayer (the hair of) the gray matter, the more authoritative.  On-the-fly testing is difficult.  Ordinarily, the gray matter that counts most (a yet-to-be-seated judge or jury) is not available at the time the code is created.  Gray matter requires a support system that is insanely complex and subject to such variables as what its bio-support system had for breakfast.  The best way to predict the outcome of an actual run of the code is to aggregate prior runs in a kind of neural network.  Precedent.  The "Delaware effect." 
 '''
 
-== To Be Completed
-
-This is what the result can look like:
-
-//console
-
-A first simple query to just create a node:
-
-[source,cypher]
-----
-CREATE (n{name:'first node'});
-----
-
-==
 
 == Include a query console
 
