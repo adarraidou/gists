@@ -84,8 +84,8 @@ becomes:
 
 [source,cypher]
 ----
-CREATE (n{name:'cypher'})-[r:LIKES]->({name:'icecream'})
-RETURN n.name, r
+ CREATE (n{name:'ABA MSPA'})-[r:URL]->({name:'http://abanet.org/abastore/index.cfm?section=main&fm=Product.AddToCart&pid=5070636'})
+ RETURN n.name, r
 ----
 
 
