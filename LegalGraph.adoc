@@ -69,6 +69,7 @@ Legal docs are "run" on gray matter.  Often the grayer (the hair of) the gray ma
 becomes:
 
 //console
+//hide
 
 [source,cypher]
 
