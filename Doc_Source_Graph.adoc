@@ -16,9 +16,9 @@ A different one would put all the {kv}s into a single node, either as (A2.1) a s
 
 There are front parts and back parts (forteile und nachteile) for both A1 and A2 solutions.  A2 is like beta.{cma}.org.   A2.2  has the disadvantage that there appears to be no Cypher search that returns the list of attributes.
 
-* BTW The AsciiDoc native "attribute" function at gist.neo4j seems fussier than at github.  (F1) Error if the attribute is defined after the use.  (F2) spacing -  (F2.1) new line and (F2.2) space following second colon. *
+* BTW The AsciiDoc native "attribute" function at gist.neo4j seems fussier than at github.  (F1) Error if the attribute is defined after the use.  (F2) spacing -  (F2.1) new line and (F2.2) space following second colon.
 
-* (@hazardj)-[:SUGGEST {text: 'If an attribute could contain a call for another attribute and formating, we'd be mostly there.'}]->(@mohavelinux) * 
+* (@hazardj)-[:SUGGEST {text: 'If an attribute could contain a call for another attribute and formating, we'd be mostly there.'}]->(@mohavelinux)
 
 == Next Steps
 
