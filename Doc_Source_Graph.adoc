@@ -1,6 +1,6 @@
 :CmA: CommonAccord
 
-:kv:key/value
+:kv: key/value
 
 = Model Agt Frame
 
