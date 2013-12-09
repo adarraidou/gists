@@ -69,6 +69,7 @@ Legal docs are "run" on gray matter.  Often the grayer (the hair of) the gray ma
 becomes:
 
 //graph
+//table
 
 [source,cypher]
 
