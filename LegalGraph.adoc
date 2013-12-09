@@ -27,7 +27,7 @@ Companies lose billions in cost, delay, lost opportunities, error and fraud.  In
 
 == Explanation of Scenario
 
-Most of the problem can be solved by looking beyond the individual documents to the collections of them and the connections among them and the persons and things referenced. In other words, to reflect their context in a graph.
+Most of the problem can be solved by looking beyond the individual documents to the collections of them, the connections among them and the persons and things on which they act. In other words, to reflect their context in a graph.
 
 The end of one person's graph is the beginning of the next person's.  The edges between these describe relationships among persons and with respect to properties.  The legal nature of these edges can be expressed as relationships among nodes of legal text, a legal "code" in the traditional sense of the word. 
 
