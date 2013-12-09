@@ -98,7 +98,7 @@ CREATE (URL15 {href:'www.ott.nih.gov/sites/default/files/documents/pdfs/cda.pdf'
 CREATE (URL3)-[:HOSTS]->(URL15)
 
 MATCH (N:URL15) 
- RETURN N.href, DM1.name, r, 
+ RETURN N.href
 
 ----
 
