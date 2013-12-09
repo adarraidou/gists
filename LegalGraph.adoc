@@ -73,14 +73,16 @@ becomes:
 [source,cypher]
 
 ----
-CREATE (P001 {text:'Name.First=James<br>Name.Last=Hazard'})
- CREATE (DocModel1 {name:'ABA_MSPA'})-[r:URL]->(URL1 {href:'abanet.org/abastore/index.cfm?section=main&fm=Product.AddToCart&pid=5070636', format:'OrderForm'})
- CREATE (DocList1 {name: 'NIH_Models'})
+CREATE (P1 {KV:'Name.First=James<br>Name.Last=Hazard'})
+ CREATE (DM1 {name:'ABA_MSPA'})-[r:URL]->(URL1 {href:'abanet.org/abastore/index.cfm?section=main&fm=Product.AddToCart&pid=5070636', format:'OrderForm'})
+ CREATE (DL1 {name: 'NIH_Models'})
  CREATE (URL2 {href:'beta.commonaccord.org/wiki/Org_ABA/MSPA_V2_Agt_Library', format:'.Cmaac'})
  CREATE (URL3 {href:'www.ott.nih.gov/sites/default/files/documents/docs/cda.doc', format:'.Doc'})
-CREATE (DocModel1)-[:URL]->(URL2)
-CREATE (DocList1)-[:URL]->(URL3)
- RETURN DocModel1.name, r
+CREATE (DM1)-[:URL]->(URL2)
+CREATE (DL1)-[:URL]->(URL3)
+CREATE (P1)-[:Like]->(DM1)
+
+ RETURN DM1.name, r
 
 ----
 
