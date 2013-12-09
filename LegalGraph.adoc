@@ -80,22 +80,22 @@ CREATE (P1 {KV:'Name.First=James<br>Name.Last=Hazard'})
  CREATE (URL3 {href:'www.ott.nih.gov/sites/default/files/documents/docs/cda.doc', format:'.Doc'})
 CREATE (DM1)-[:URL]->(URL2)
 CREATE (DL1)-[:URL]->(URL3)
-CREATE (P1)-[:Like]->(DM1)
-CREATE (P1)-[:Like]->(DL1)
+CREATE (P1)-[:LIKE]->(DM1)
+CREATE (P1)-[:LIKE]->(DL1)
 CREATE (URL4 {href:'www.brown.edu/research/policies-and-compliance',format: 'DList',comment:''})
 CREATE (URL5 {href:'www.cctec.cornell.edu/forms/index.php',format: 'DList',comment:'Cornell Tech Transfer folks'})
 CREATE (URL6 {href:'research.ucdavis.edu/f/f',format: 'DList',comment:''})
 CREATE (URL7 {href:'web.mit.edu/tlo/www/misc/forms.html   ',format: 'DList',comment:'MIT Tech Licensing Office - NDAs, etc.'})
 CREATE (URL9 {href:'www.clausebuilder.org',format: 'DTool',comment:'American Arbitration Assn (adr.org) Clause Building Tool'})
-CREATE (URL10 {href:'[http://abanet.org/abastore/index.cfm?section=main&fm=Product.AddToCart&pid=5070636 ABA Model Share Purchase Agreement]',format: 'Book',comment:'ABA - trying to find a list of all their materials.  This MSPA is also [[{CmA}Org_ABA/MSPA_V2_Agt_Library]]'})
-CREATE (URL11 {href:'[http://books.google.com/books?id=Se6WohjS83sC&printsec=frontcover&dq=inauthor:%22American+Bar+Foundation.+Corporate+Debt+Financing+Project%22&hl=en&sa=X&ei=AXKZUt24NYScjALj-4CwBg&ved=0CEUQ6AEwAQ#v=onepage&q&f=false American Bar Foundation - Model Debenture Indenture]',format: 'DList',comment:'This project from the age of typewriters casts a long shadow.  See the discussion of the rationale at page 3 of this reference.'})
+CREATE (URL10 {href:'abanet.org/abastore/index.cfm?section=main&fm=Product.AddToCart&pid=5070636 ABA Model Share Purchase Agreement]',format: 'Book',comment:'ABA - trying to find a list of all their materials.  This MSPA is also [[{CmA}Org_ABA/MSPA_V2_Agt_Library]]'})
+CREATE (URL11 {href:'books.google.com/books?id=Se6WohjS83sC&printsec=frontcover&dq=inauthor:%22American+Bar+Foundation.+Corporate+Debt+Financing+Project%22&hl=en&sa=X&ei=AXKZUt24NYScjALj-4CwBg&ved=0CEUQ6AEwAQ#v=onepage&q&f=false American Bar Foundation - Model Debenture Indenture]',format: 'DList',comment:'This project from the age of typewriters casts a long shadow.  See the discussion of the rationale at page 3 of this reference.'})
 CREATE (URL12 {href:'acc.com/contracts/draftingbenchmarking.cfm',format: 'DSite',comment:'Association of Corporate Counsel sample documents and KM Standards project - member sign-in wall'})
 CREATE (URL13 {href:'aia.org/contractdocs/index.htm',format: 'DSite',comment:'AIA Docs on Demand'})
 CREATE (URL14 {href:'aipn.org',format: 'DL',comment:'Petroleum industry. Member sign-in wall.'})
 CREATE (URL8 {href:'astaspice.org/i4a/pages/index.cfm?pageid=1',format: 'DSite',comment:'Spice Association Model Contracts - behind member login wall'})
 
-
-
+CREATE (URL15 {href:'www.ott.nih.gov/sites/default/files/documents/pdfs/cda.pdf', format:'.pdf'})
+CREATE (URL3)-[:HOSTS]->(URL15)
 
  RETURN DM1.name, r
 
