@@ -1,3 +1,5 @@
+:CmA: CommonAccord
+
 = Model Agt Frame
 
 == This Approach (A1)
@@ -18,7 +20,6 @@ There are front parts and back parts (forteile und nachteile) for both A1 and A2
 
 Aggregate Lists and establish priority (recursive, depth-first) as among Spans with the same names.
 
-:CmA: CommonAccord
 
 
 //graph
