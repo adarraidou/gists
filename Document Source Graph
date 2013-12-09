@@ -1,0 +1,13 @@
+= Model Agt Frame
+//graph
+//table
+
+
+[source,cypher]
+
+----
+CREATE (List1)
+CREATE (Span1 {V:'{Prologue}<ol><li>{Agt.Sec.S}</li></ol>{Agt.Signature}</br>{Agt.Attachment}'})
+CREATE (List1) -[:LISTS {Key:'Doc.Body'}]->(Span1)
+
+____
