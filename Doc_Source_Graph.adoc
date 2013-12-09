@@ -12,6 +12,9 @@ A different one would put all the key/values into a single node, either as a sin
 
 There are front parts and back parts (forteile und nachteile) for both solutions.   The second one has the disadvantage that there appears to be no Cypher search that returns the list of attributes.
 
+== Next Step
+
+Aggregate Lists and establish priority (recursive, depth-first) as among Spans with the same names.
 
 //graph
 //table
