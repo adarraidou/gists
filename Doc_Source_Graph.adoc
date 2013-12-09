@@ -1,5 +1,5 @@
 :CmA: CommonAccord
-
+:k/v:key/value
 = Model Agt Frame
 
 == This Approach (A1)
@@ -8,13 +8,13 @@ This is an extremely atomized approach to spans.
 
 == Another Approach (A2)
 
-A different one would put all the key/values into a single node, either as (A2.1) a single string (value:'key1=value1<>key2=value2') or as (A2.2) individual attributes ( {key1='value1', key2='value2'}). 
+A different one would put all the {k/v}s into a single node, either as (A2.1) a single string (value:'key1=value1<>key2=value2') or as (A2.2) individual attributes ( {key1='value1', key2='value2'}). 
 
 == Analysis (so to speak)
 
-*See the github original for analyis.  The AsciiDoc native "attribute" function seems to throw an error at gist.neo4j.*
-
 There are front parts and back parts (forteile und nachteile) for both A1 and A2 solutions.  A2 is like beta.{cma}.org   A2.2  has the disadvantage that there appears to be no Cypher search that returns the list of attributes.
+
+*BTW The AsciiDoc native "attribute" function throws an error at gist.neo4j if the attribute comes after the use.*
 
 == Next Step
 
