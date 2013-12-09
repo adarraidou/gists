@@ -78,7 +78,7 @@ becomes:
  CREATE (URL2 {href:'beta.commonaccord.org/wiki/Org_ABA/MSPA_V2_Agt_Library', format:'.Cmaac'})
  CREATE (URL3 {href:'www.ott.nih.gov/sites/default/files/documents/docs/cda.doc', format:'.Doc'})
 CREATE (DocModel1)-[:URL]->(URL2)
- RETURN DocModel.name, r
+ RETURN DocModel1.name, r
 
 ----
 
