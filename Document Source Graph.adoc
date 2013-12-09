@@ -8,7 +8,7 @@
 
 ----
 CREATE (List1)
-CREATE (Span1)
-CREATE (List1) -[:LISTS {Key:'Doc.Body'}]->(Span1)
+CREATE (Span1 {value:'{Prologue}<ol><li>{Agt.Sec.S}</li></ol>{Agt.Signature}</br>{Agt.Attachment}'})
+CREATE (List1) -[:LISTS {key:'Doc.Body'}]->(Span1)
 
 ----
