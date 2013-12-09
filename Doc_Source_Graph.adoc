@@ -49,5 +49,5 @@ There are front parts and back parts (forteile und nachteile) for both A1 and A2
 
 Aggregate Lists and establish priority (recursive, depth-first) as among Spans with the same names.
 
-@hazardj figures out how to do git coding locally instead of through github browser interface. 
+@hazardj remembers how to do git coding locally instead of through github browser interface. 
 
