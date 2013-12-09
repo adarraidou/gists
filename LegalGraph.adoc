@@ -81,6 +81,7 @@ CREATE (P1 {KV:'Name.First=James<br>Name.Last=Hazard'})
 CREATE (DM1)-[:URL]->(URL2)
 CREATE (DL1)-[:URL]->(URL3)
 CREATE (P1)-[:Like]->(DM1)
+CREATE (P1)-[:Like]->(DL1)
 
  RETURN DM1.name, r
 
