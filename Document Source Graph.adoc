@@ -22,5 +22,5 @@ CREATE (List1) -[:LISTS {key:'Sec.Misc'}]->(Span3)
 CREATE (List1) -[:LISTS {key:'Sec.Law'}]->(Span4)
 WITH Span1
 MATCH (n)<-[:LISTS]-()
-RETURN n
+RETURN n.span
 ----
