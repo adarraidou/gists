@@ -10,6 +10,8 @@ A different one would put all the key/values into a single node, either as (A2.1
 
 == Analysis (so to speak)
 
+*See the github original for analyis.  The AsciiDoc native "attribute" function seems to throw an error at gist.neo4j.*
+
 There are front parts and back parts (forteile und nachteile) for both A1 and A2 solutions.  A2 is like beta.{cma}.org   A2.2  has the disadvantage that there appears to be no Cypher search that returns the list of attributes.
 
 == Next Step
