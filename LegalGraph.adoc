@@ -97,9 +97,7 @@ CREATE (URL8 {href:'astaspice.org/i4a/pages/index.cfm?pageid=1',format: 'DSite',
 CREATE (URL15 {href:'www.ott.nih.gov/sites/default/files/documents/pdfs/cda.pdf', format:'.pdf'})
 CREATE (URL3)-[:HOSTS]->(URL15)
 
-START n=node(*)
-MATCH (dm)<-[:HOSTS]-(dl) 
-RETURN dm.href
+RETURN URL15.href
 
 ----
 
