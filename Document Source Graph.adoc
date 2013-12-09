@@ -13,7 +13,7 @@ CREATE (List1)
 CREATE (Span1 {span:'{Prologue}<ol><li>{Agt.Sec.S}</li></ol>{Agt.Signature}</br>{Agt.Attachment}'})
 CREATE (Span2 {span:'<ol><li>{Sec.Def}</li><li>{Sec.Deal}</li><li>{Sec.Term}</li><li>{Sec.Misc}</li></ol>'})
 CREATE (Span3 {span:'{Sec.Misc.Title} <ol><li>{Sec.Notice}</li><li>{Sec.Law}</li><li>{Sec.Forum}</li><li>{Sec.Entire}</li></ol>'}) 
-CREATE (Span4 {span: '<u>Law</u>.  This agreement and any dispute relating to it shall be governed by the law of {Dispute.State.the}'})
+CREATE (Span4 {span:'<u>Law</u>.  This agreement and any dispute relating to it shall be governed by the law of {Dispute.State.the}'})
 
 CREATE (List1) -[:LISTS {key:'Doc.Body'}]->(Span1)
 
@@ -22,5 +22,5 @@ CREATE (List1) -[:LISTS {key:'Sec.Misc'}]->(Span3)
 CREATE (List1) -[:LISTS {key:'Sec.Law'}]->(Span4)
 WITH Span1
 MATCH n=()
-RETURN n
+RETURN n.span
 ----
