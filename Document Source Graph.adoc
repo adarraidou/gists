@@ -20,6 +20,6 @@ CREATE (List1) -[:LISTS {key:'Doc.Body'}]->(Span1)
 CREATE (List1) -[:LISTS {key:'Agt.Sec.S'}]->(Span2)
 CREATE (List1) -[:LISTS {key:'Sec.Misc'}]->(Span3)
 CREATE (List1) -[:LISTS {key:'Sec.Law'}]->(Span4)
-WITH n=()
+WITH Span1
 RETURN n.span
 ----
