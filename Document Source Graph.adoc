@@ -1,4 +1,5 @@
 = Model Agt Frame
+
 //graph
 //table
 
@@ -7,7 +8,7 @@
 
 ----
 CREATE (List1)
-CREATE (Span1 {V:'{Prologue}<ol><li>{Agt.Sec.S}</li></ol>{Agt.Signature}</br>{Agt.Attachment}'})
+CREATE (Span1)
 CREATE (List1) -[:LISTS {Key:'Doc.Body'}]->(Span1)
 
-____
+----
