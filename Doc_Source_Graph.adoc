@@ -8,7 +8,7 @@ This is an extremely atomized approach to spans.
 
 A different one would put all the key/values into a single node, either as a single string (value:'key1=value1<>key2=value2') or as individual attributes ( {key1='value1', key2='value2'}). 
 
-==Analysis (so to speak)
+== Analysis (so to speak)
 
 There are front parts and back parts (forteile und nachteile) for both solutions.   The second one has the disadvantage that there appears to be no Cypher search that returns the list of attributes.
 
