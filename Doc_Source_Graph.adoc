@@ -14,6 +14,7 @@
 [source,cypher]
 
 ----
+CREATE (P1 {twitter:'Hazardj"})
 CREATE (List1)
 CREATE (Span1 {span:'{Prologue}<ol><li>{Agt.Sec.S}</li></ol>{Agt.Signature}</br>{Agt.Attachment}'})
 CREATE (Span2 {span:'<ol><li>{Sec.Def}</li><li>{Sec.Deal}</li><li>{Sec.Term}</li><li>{Sec.Misc}</li></ol>'})
@@ -27,6 +28,12 @@ CREATE (List1) -[:LISTS {key:'Agt.Sec.S'}]->(Span2)
 CREATE (List1) -[:LISTS {key:'Sec.Misc'}]->(Span3)
 CREATE (List1) -[:LISTS {key:'Sec.Law'}]->(Span4)
 CREATE (List1) -[:LISTS {key:'Sec.Misc.Title'}]->(Span5)
+
+CREATE (List2 {name:'MIT.edu/otl/NDA_Mutual'})
+CREATE (Span2_1 {span:'<ol><li>{Sec.Conf}</li><li>{Sec.Use}</li><li>{Sec.Care}</li><li>{Sec.Compelled}</li><li>{Sec.Disclaim.Warranty}</li><li>{Sec.Term}</li><li>{Sec.Remedy}</li><li>{Sec.Notice}</li><li>{Sec.Misc}</li></ol>'} )
+CREATE (List2) -[:LISTS {key:'Doc.Body'}]->(Span2_1)
+CREATE (P1) -[:LIKES]->(List1)
+CREATE (P1) -[:LIKES]->(List2)
 
 WITH Span1
 MATCH (v)<-[k:LISTS]-()
