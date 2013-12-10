@@ -28,9 +28,7 @@
 {w11}
 
 
-== funny sentence
-
-The {w3} {w1} followed the {w5} and {w9}ed the {w7} in the {w10}.
+== funny sentence: The {w3} {w1} followed the {w5} and {w9}ed the {w7} in the {w10}.
 
 
 
