@@ -30,7 +30,7 @@
 
 == funny sentence
 
-{w1}, {w3}, {w5}, {w7}, {w9}, {w10}
+The {w3} {w1} followed the {w5} and {w9}ed the {w7} in the {w10}.
 
 
 
