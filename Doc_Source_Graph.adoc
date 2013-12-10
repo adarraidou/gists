@@ -26,7 +26,7 @@ CREATE (List1) -[:LISTS {key:'Doc.Body'}]->(Span1)
 
 CREATE (List1) -[:LISTS {key:'Agt.Sec.S'}]->(Span2)
 CREATE (List1) -[:LISTS {key:'Sec.Misc'}]->(Span3)
-CREATE (List1) -[:LISTS {key:'Sec.Law'}]->(Span4)
+CREATE (List1) -[:LISTS {key:'Misc.Law'}]->(Span4)
 CREATE (List1) -[:LISTS {key:'Misc.Title'}]->(Span5)
 
 CREATE (List2 {name:'MIT.edu/otl/NDA_Mutual'})
