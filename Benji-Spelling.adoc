@@ -1,0 +1,17 @@
+:w1: train
+:w2: tray
+:w3: mail
+:w4: play
+:w5: trail
+:w6: pay
+:w7: sail
+:w8: hay
+:w9: nail
+:w10: rain
+:w11: they
+:w12: great
+
+
+{w1}, {w2}, {w3}, {w4}, {w5}, {w6}, {w7}, {w8}, {w9}, {w10}, {w11}, {w12} 
+
+
