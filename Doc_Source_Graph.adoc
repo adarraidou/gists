@@ -58,7 +58,7 @@ There are front parts and back parts ({forteile} und nachteile) for both A1 and 
 
 * BTW The AsciiDoc native "attribute" function at gist.neo4j seems fussier than at github.  (F1) Error if the attribute is defined after the use.  (F2) spacing -  (F2.1) new line and (F2.2) space following second colon.
 
-* (@hazardj)-[:SUGGEST {text: 'If an attribute could contain a call for another attribute and formating, we'd be mostly there.'}]->(@mojavelinux)
+* (@hazardj)-[:SUGGEST {text: 'If an attribute could contain a call for another attribute and formatting, we'd be mostly there.'}]->(@mojavelinux)
 
 == Next Steps
 
