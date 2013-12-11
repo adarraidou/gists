@@ -40,7 +40,7 @@ CREATE (DS1)<-[:HOSTED]-(List2)
 
 WITH Span1
 MATCH (v)<-[k:LISTS]-()
-RETURN k.key, v.span
+RETURN k.key, v.span as document
 ----
 
 
