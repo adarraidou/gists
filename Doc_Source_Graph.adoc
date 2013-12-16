@@ -31,7 +31,7 @@ CREATE (List1) -[:LISTS {key:'Misc._Title'}]->(Span5)
 
 CREATE (List2 {name:'MIT.edu/otl/NDA_Mutual'})
 CREATE (Span2_1 {span:'<ol><li>{Sec.Conf}</li><li>{Sec.Use}</li><li>{Sec.Care}</li><li>{Sec.Compelled}</li><li>{Sec.Disclaim.Warranty}</li><li>{Sec.Term}</li><li>{Sec.Remedy}</li><li>{Sec.Notice}</li><li>{Sec.Misc}</li></ol>'} )
-CREATE (List2) -[:LISTS {key:'Doc.Body'}]->(Span2_1)
+CREATE (List2) -[:LISTS {key:'Agt.Sec.S.'}]->(Span2_1)
 CREATE (P1) -[:LIKES]->(List1)
 CREATE (P1) -[:LIKES]->(List2)
 
