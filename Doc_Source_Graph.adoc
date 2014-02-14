@@ -12,10 +12,10 @@
 
 
 
-Graphs can represent very complex relationships.  B is an employee of A.  C has borrowed from D.   
+Graphs can represent very complex relationships.  B is an employee of A.  C has borrowed from D.   D and A are corporate affiliates.
 
-Documents are graphs.  The best way to handle documents is as lists of {kv}s that render into the full document.  See {Cmorg}.
-Indeed, we can create an authoring system and picture of the (formal relationships in the) world, as lists that reference one another.  
+Documents are graphs.  The best way to handle documents is as source code - lists of {kv}s that render into the full document.  See {Cmorg}.
+Indeed, lists can be an authoring system and picture of the (formal relationships in the) world.  
 
 A teacher could assign an essay on Shakespeare and include a link to the graph of him, his plays, the roles, lines.  In the scope of the essay, auto complete would give Shakespeare references, without the distraction of the rest of the internet.  {Sh.play?.role?:Falstaff.line?} would return all of his lines. 
 
