@@ -1,5 +1,5 @@
 :CmA: CommonAccord
-:CmA.org: http://beta.commonaccord.org
+:Cmorg: http://beta.commonaccord.org
 :kv: key/value
 
 :forteile: vorteile 
@@ -12,8 +12,8 @@
 
 
 
-Graphs can represent very complex relationships.  Documents are graphs.  The best way to handle documents is as lists of {kv}s that render into the full document.  See {CmA.Org}.
-Indeed, if we can create an authoring system and picture of the (formal relationships in the) world, as lists that reference one another.  
+Graphs can represent very complex relationships.  Documents are graphs.  The best way to handle documents is as lists of {kv}s that render into the full document.  See {Cmorg}.
+Indeed, we can create an authoring system and picture of the (formal relationships in the) world, as lists that reference one another.  
 
 A teacher could assign an essay on Shakespeare and include a link to the graph of him, his plays, the roles, lines.  In the scope of the essay, auto complete would give Shakespeare references, without the distraction of the rest of the internet.  {Sh.play?.role?:Falstaff.line?} would return all of his lines. 
 
