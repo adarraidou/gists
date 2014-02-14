@@ -1,5 +1,5 @@
 :CmA: CommonAccord
-
+:CmA.org: http://beta.commonaccord.org
 :kv: key/value
 
 :forteile: vorteile 
@@ -12,6 +12,21 @@
 
 
 [source,cypher]
+
+Graphs can represent very complex relationships.  Documents are graphs.  The best way to handle documents is as lists of {kv}s that render into the full document.  See {CmA.Org}.
+Indeed, if we can create an authoring system and picture of the (formal relationships in the) world, as lists that reference one another.  
+
+A teacher could assign an essay on Shakespeare and include a link to the graph of him, his plays, the roles, lines.  In the scope of the essay, auto complete would give Shakespeare references, without the distraction of the rest of the internet.  {Sh.play?.role?:Falstaff.line?} would return all of his lines. 
+
+The student's work could be structured or open.  An exam could include or not include the link to the sources.  All of the student's work would be accumulate, for both student and institution, like in a portfolio of linked content.  Or a history of commits on Github. 
+
+Similarly, an assigment could attach the history of physics, including the names of great physicists and videos of their experiments. 
+
+A law school teacher, or litigant filing a brief, could link to a collection of cases and statutes, curated by a respected authority.
+
+Finally, an entire legal system could run as a distributed collection of linked lists.  Law is, ultimately, about people doing things with documents.  If the documents cease to be static reincantations of rules and are instead statements in a context (diffs), then much will come clear. 
+
+@hazardj has begun a core of such content in Mediawiki.  There appears every reason for that to become a graph. 
 
 ----
 CREATE (P1 {KV:'Name.First=James<>Name.Last=Hazard<>twitter=Hazardj'})
