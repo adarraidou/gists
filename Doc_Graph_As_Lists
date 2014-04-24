@@ -46,9 +46,11 @@ RETURN k.key as Key, k.value as Value
 == Overview
 
 The idea is to implement in a graph the list data model that is used in http://a.commonaccord.org/mediawiki/index.php/Main_Page
+and deepened in some of the links references at http://beta.commonaccord.org.  
 
-== Next Steps
+A list of key/values, where the value is either a span of html or the name of another list. 
 
-Aggregate Lists and establish priority (recursive, depth-first) as among Spans with the same names.
+A list can be understood as in Lisp - an item that prepends a shorter list, recursively.  That allows each bit of work to be seperately recorded.  
 
-@hazardj remembers how to do git coding locally instead of through github browser interface. 
+
+
