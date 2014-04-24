@@ -41,6 +41,7 @@ CREATE (SpanF6 {key:'Misc.Law._Sec' , value:'<u>Applicable Law</u>.  This Agreem
 CREATE (SpanF6) -[:Extends]->(SpanF5)
 
 CREATE (SpanA3 {key:'(form)'})
+CREATE (SpanA3) -[:Extends]->(SpanA2)
 CREATE (SpanA3) -[:UsesList]->(SpanF6)
 
 
