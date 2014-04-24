@@ -30,7 +30,7 @@ CREATE (SpanF5 {key:'Prologue' , value:'{Pcpl.ID} and {Cttr.ID} hereby agree'})
 CREATE (SpanF5) -[:Extends]->(SpanF4)
 
 
-CREATE (SpanA1 {key:'/form\'})
+CREATE (SpanA1 {key:'/form/'})
 CREATE (SpanA1) -[:UsesList]->(SpanF5)
 
 
