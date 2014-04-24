@@ -45,7 +45,7 @@ RETURN k.key as Key, k.value as Value
 
 == Overview
 
-The idea is to implement in a graph the list data model that is used in [http://a.commonaccord.org/mediawiki/index.php/Main_Page]
+The idea is to implement in a graph the list data model that is used in http://a.commonaccord.org/mediawiki/index.php/Main_Page
 
 == Next Steps
 
