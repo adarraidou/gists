@@ -60,5 +60,8 @@ A list of key/values, where the value is either a span of html or the name of an
 
 A list can be understood as in Lisp - an item that prepends a shorter list, recursively.  That allows each bit of work to be seperately recorded.  
 
+== Notes
 
+On reflection, the "UsesList" relationship notion seems incorrect.  The relationship creates a direct binding between  (SpanA3) -[]-> (SpanF6).  Instead of this kind of inline linking, it is better to use indirect linking.  So (SpanA3) would declare as a string the name or GUID of (SpanF6), and that would be resolved in an index. 
+This would be consistent with how the keys for spans of text are resolved.  Needs a bit of thought. 
 
