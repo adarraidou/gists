@@ -37,8 +37,8 @@ CREATE (SpanA2 {key:'Pcpl.ID' , value:'Acme Inc., a Delaware corporation'})
 CREATE (SpanA2) -[:Extends]->(SpanA1)
 
 
-WITH Span1
-MATCH (SpanA2)<-[]-()
+WITH SpanA2
+MATCH (k)<-[]-()
 RETURN k.key as Key, v.value as Value
 ----
 
