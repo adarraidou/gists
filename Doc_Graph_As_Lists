@@ -34,7 +34,7 @@ CREATE (SpanA1 {key:'/form\'})
 CREATE (SpanA1) -[:UsesList]->(Span5)
 
 
-CREATE (SpanA2 {key:'Pcpl.ID' , value:'Acme Inc., a Delaware corporation'})
+CREATE (SpanA2 {span:'Pcpl.ID'})
 CREATE (SpanA2) -[:Extends]->(SpanA1)
 
 
