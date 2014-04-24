@@ -39,7 +39,7 @@ CREATE (SpanA2) -[:Extends]->(SpanA1)
 
 WITH SpanA2
 MATCH (k)<-[]-()
-RETURN k.key as Key, v.value as Value
+RETURN k.key as Key, k.value as Value
 ----
 
 
