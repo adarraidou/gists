@@ -37,7 +37,14 @@ CREATE (SpanA2 {key:'Pcpl.ID' , value:'Acme Inc., a Delaware corporation'})
 CREATE (SpanA2) -[:Extends]->(SpanA1)
 
 
-WITH SpanA2
+CREATE (SpanF6 {key:'Misc.Law._Sec' , value:'<u>Applicable Law</u>.  This Agreement and all disputes relating to it and the transactions contemplated by it are subject to {Dispute.State.the} law.'})
+CREATE (SpanF6) -[:Extends]->(SpanF5)
+
+CREATE (SpanA3 {key:'(form)'})
+CREATE (SpanA3) -[:UsesList]->(SpanF6)
+
+
+WITH SpanA3
 MATCH (k)<-[]-()
 RETURN k.key as Key, k.value as Value
 ----
