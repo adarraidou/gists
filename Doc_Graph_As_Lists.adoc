@@ -58,7 +58,7 @@ and deepened in some of the links references at http://beta.commonaccord.org.
 
 A list of key/values, where the value is either a span of html or the name of another list. 
 
-A list can be understood as in Lisp - an item that prepends a shorter list, recursively.  That allows each bit of work to be seperately recorded.  
+A list can be understood as in Lisp - an item that prepends a shorter list, recursively.  That allows each bit of work to be separately recorded.  
 
 == Notes
 
