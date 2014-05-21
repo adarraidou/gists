@@ -54,7 +54,7 @@ RETURN k.key as Key, k.value as Value
 == Overview
 
 The idea is to implement in a graph the list data model that is used in http://a.commonaccord.org/mediawiki/index.php/Main_Page
-and deepened in some of the links references at http://beta.commonaccord.org.  
+and deepened in some of the links referenced at http://beta.commonaccord.org.  
 
 A list of key/values, where the value is either a span of html or the name of another list. 
 
