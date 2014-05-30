@@ -47,7 +47,7 @@ CREATE (SpanA3) -[:UsesList]->(SpanF6)
 
 WITH SpanA3
 MATCH (k)<-[]-()
-RETURN k.key as Key, k.value as Value
+RETURN k.title as Key, k.value as Value
 ----
 
 
