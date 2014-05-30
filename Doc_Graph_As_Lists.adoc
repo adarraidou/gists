@@ -26,21 +26,21 @@ CREATE (SpanF3) -[:Extends]->(SpanF2)
 CREATE (SpanF4:Span {title:'Misc.Law._Sec' , value:'<u>Law</u>.  This agreement and any dispute relating to it shall be governed by the law of {Dispute.State.the}.'})
 CREATE (SpanF4) -[:Extends]->(SpanF3)
 
-CREATE (SpanF5 {key:'Prologue' , value:'{Pcpl.ID} and {Cttr.ID} hereby agree'})
+CREATE (SpanF5:Span {title:'Prologue' , value:'{Pcpl.ID} and {Cttr.ID} hereby agree'})
 CREATE (SpanF5) -[:Extends]->(SpanF4)
 
 
-CREATE (SpanA1 {key:'(form)'})
+CREATE (SpanA1:Span {title:'(form)'})
 CREATE (SpanA1) -[:UsesList]->(SpanF5)
 
-CREATE (SpanA2 {key:'Pcpl.ID' , value:'Acme Inc., a Delaware corporation'})
+CREATE (SpanA2:Span {title:'Pcpl.ID' , value:'Acme Inc., a Delaware corporation'})
 CREATE (SpanA2) -[:Extends]->(SpanA1)
 
 
-CREATE (SpanF6 {key:'Misc.Law._Sec' , value:'<u>Applicable Law</u>.  This Agreement and all disputes relating to it and the transactions contemplated by it are subject to {Dispute.State} law.'})
+CREATE (SpanF6:Span {title:'Misc.Law._Sec' , value:'<u>Applicable Law</u>.  This Agreement and all disputes relating to it and the transactions contemplated by it are subject to {Dispute.State} law.'})
 CREATE (SpanF6) -[:Extends]->(SpanF5)
 
-CREATE (SpanA3 {key:'(form)'})
+CREATE (SpanA3:Span {title:'(form)'})
 CREATE (SpanA3) -[:Extends]->(SpanA2)
 CREATE (SpanA3) -[:UsesList]->(SpanF6)
 
