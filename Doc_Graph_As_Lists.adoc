@@ -6,6 +6,7 @@
 
 = Model Agt Frame
 
+This presents a first sketch of a data model that incorporates the "CONS" notion from Lisp with a graph, so that every edit is an additional list item tacked on to the front of an existing list.  It is very likely not the right way to do this, but may show a more skilled person what is desired.  
 
 //graph
 //table
