@@ -10,7 +10,7 @@
 //graph
 //table
 
-
+//hide
 [source,cypher]
 
 ----
@@ -31,6 +31,400 @@ CREATE (t_payment :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 
 CREATE (t_rental :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'rental' })
 CREATE (t_staff :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'staff' })
 CREATE (t_store :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'store' })
+
+
+
+CREATE (t_actor)-[:HAS_COLUMN]->(t_actor_actor_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '1', tableName: 'actor', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'actor_id' }
+    ) 
+CREATE (t_actor)-[:HAS_COLUMN]->(t_actor_first_name:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '2', tableName: 'actor', sqlDataType: '0', charOctetLength: '45', sqlDatetimeSub: '0', columnSize: '45', isNullable: 'NO', bufferLength: '65535', columnName: 'first_name' }
+    ) 
+CREATE (t_actor)-[:HAS_COLUMN]->(t_actor_last_name:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '3', tableName: 'actor', sqlDataType: '0', charOctetLength: '45', sqlDatetimeSub: '0', columnSize: '45', isNullable: 'NO', bufferLength: '65535', columnName: 'last_name' }
+    ) 
+CREATE (t_actor)-[:HAS_COLUMN]->(t_actor_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '4', tableName: 'actor', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_address)-[:HAS_COLUMN]->(t_address_address_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '1', tableName: 'address', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'address_id' }
+    ) 
+CREATE (t_address)-[:HAS_COLUMN]->(t_address_address:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '2', tableName: 'address', sqlDataType: '0', charOctetLength: '50', sqlDatetimeSub: '0', columnSize: '50', isNullable: 'NO', bufferLength: '65535', columnName: 'address' }
+    ) 
+CREATE (t_address)-[:HAS_COLUMN]->(t_address_address2:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '3', tableName: 'address', sqlDataType: '0', charOctetLength: '50', sqlDatetimeSub: '0', columnSize: '50', isNullable: 'YES', bufferLength: '65535', columnName: 'address2' }
+    ) 
+CREATE (t_address)-[:HAS_COLUMN]->(t_address_district:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '4', tableName: 'address', sqlDataType: '0', charOctetLength: '20', sqlDatetimeSub: '0', columnSize: '20', isNullable: 'NO', bufferLength: '65535', columnName: 'district' }
+    ) 
+CREATE (t_address)-[:HAS_COLUMN]->(t_address_city_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '5', tableName: 'address', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'city_id' }
+    ) 
+CREATE (t_address)-[:HAS_COLUMN]->(t_address_postal_code:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '6', tableName: 'address', sqlDataType: '0', charOctetLength: '10', sqlDatetimeSub: '0', columnSize: '10', isNullable: 'YES', bufferLength: '65535', columnName: 'postal_code' }
+    ) 
+CREATE (t_address)-[:HAS_COLUMN]->(t_address_phone:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '7', tableName: 'address', sqlDataType: '0', charOctetLength: '20', sqlDatetimeSub: '0', columnSize: '20', isNullable: 'NO', bufferLength: '65535', columnName: 'phone' }
+    ) 
+CREATE (t_address)-[:HAS_COLUMN]->(t_address_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '8', tableName: 'address', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_category)-[:HAS_COLUMN]->(t_category_category_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '1', tableName: 'category', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'category_id' }
+    ) 
+CREATE (t_category)-[:HAS_COLUMN]->(t_category_name:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '2', tableName: 'category', sqlDataType: '0', charOctetLength: '25', sqlDatetimeSub: '0', columnSize: '25', isNullable: 'NO', bufferLength: '65535', columnName: 'name' }
+    ) 
+CREATE (t_category)-[:HAS_COLUMN]->(t_category_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '3', tableName: 'category', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_city)-[:HAS_COLUMN]->(t_city_city_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '1', tableName: 'city', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'city_id' }
+    ) 
+CREATE (t_city)-[:HAS_COLUMN]->(t_city_city:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '2', tableName: 'city', sqlDataType: '0', charOctetLength: '50', sqlDatetimeSub: '0', columnSize: '50', isNullable: 'NO', bufferLength: '65535', columnName: 'city' }
+    ) 
+CREATE (t_city)-[:HAS_COLUMN]->(t_city_country_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '3', tableName: 'city', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'country_id' }
+    ) 
+CREATE (t_city)-[:HAS_COLUMN]->(t_city_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '4', tableName: 'city', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_country)-[:HAS_COLUMN]->(t_country_country_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '1', tableName: 'country', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'country_id' }
+    ) 
+CREATE (t_country)-[:HAS_COLUMN]->(t_country_country:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '2', tableName: 'country', sqlDataType: '0', charOctetLength: '50', sqlDatetimeSub: '0', columnSize: '50', isNullable: 'NO', bufferLength: '65535', columnName: 'country' }
+    ) 
+CREATE (t_country)-[:HAS_COLUMN]->(t_country_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '3', tableName: 'country', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_customer)-[:HAS_COLUMN]->(t_customer_customer_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '1', tableName: 'customer', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'customer_id' }
+    ) 
+CREATE (t_customer)-[:HAS_COLUMN]->(t_customer_store_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '2', tableName: 'customer', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'store_id' }
+    ) 
+CREATE (t_customer)-[:HAS_COLUMN]->(t_customer_first_name:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '3', tableName: 'customer', sqlDataType: '0', charOctetLength: '45', sqlDatetimeSub: '0', columnSize: '45', isNullable: 'NO', bufferLength: '65535', columnName: 'first_name' }
+    ) 
+CREATE (t_customer)-[:HAS_COLUMN]->(t_customer_last_name:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '4', tableName: 'customer', sqlDataType: '0', charOctetLength: '45', sqlDatetimeSub: '0', columnSize: '45', isNullable: 'NO', bufferLength: '65535', columnName: 'last_name' }
+    ) 
+CREATE (t_customer)-[:HAS_COLUMN]->(t_customer_email:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '5', tableName: 'customer', sqlDataType: '0', charOctetLength: '50', sqlDatetimeSub: '0', columnSize: '50', isNullable: 'YES', bufferLength: '65535', columnName: 'email' }
+    ) 
+CREATE (t_customer)-[:HAS_COLUMN]->(t_customer_address_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '6', tableName: 'customer', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'address_id' }
+    ) 
+CREATE (t_customer)-[:HAS_COLUMN]->(t_customer_active:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '-7', tableCat: 'sakila', typeName: 'BIT', ordinalPosition: '7', tableName: 'customer', sqlDataType: '0', sqlDatetimeSub: '0', isNullable: 'NO', bufferLength: '65535', columnDef: '1', columnName: 'active' }
+    ) 
+CREATE (t_customer)-[:HAS_COLUMN]->(t_customer_create_date:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'DATETIME', ordinalPosition: '8', tableName: 'customer', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnName: 'create_date' }
+    ) 
+CREATE (t_customer)-[:HAS_COLUMN]->(t_customer_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '9', tableName: 'customer', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'YES', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_film_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '1', tableName: 'film', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'film_id' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_title:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '2', tableName: 'film', sqlDataType: '0', charOctetLength: '255', sqlDatetimeSub: '0', columnSize: '255', isNullable: 'NO', bufferLength: '65535', columnName: 'title' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_description:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '-1', tableCat: 'sakila', typeName: 'TEXT', ordinalPosition: '3', tableName: 'film', sqlDataType: '0', charOctetLength: '65535', sqlDatetimeSub: '0', columnSize: '65535', isNullable: 'YES', bufferLength: '65535', columnName: 'description' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_release_year:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '91', tableCat: 'sakila', typeName: 'YEAR', ordinalPosition: '4', tableName: 'film', sqlDataType: '0', sqlDatetimeSub: '0', isNullable: 'YES', bufferLength: '65535', columnName: 'release_year' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_language_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '5', tableName: 'film', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'language_id' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_original_language_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '6', tableName: 'film', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'YES', bufferLength: '65535', decimalDigits: '0', columnName: 'original_language_id' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_rental_duration:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '7', tableName: 'film', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnDef: '3', columnName: 'rental_duration' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_rental_rate:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '3', tableCat: 'sakila', typeName: 'DECIMAL', ordinalPosition: '8', tableName: 'film', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '4', isNullable: 'NO', bufferLength: '65535', decimalDigits: '2', columnDef: '4.99', columnName: 'rental_rate' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_length:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '9', tableName: 'film', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'YES', bufferLength: '65535', decimalDigits: '0', columnName: 'length' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_replacement_cost:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '3', tableCat: 'sakila', typeName: 'DECIMAL', ordinalPosition: '10', tableName: 'film', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '2', columnDef: '19.99', columnName: 'replacement_cost' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_rating:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '1', tableCat: 'sakila', typeName: 'ENUM', ordinalPosition: '11', tableName: 'film', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'YES', bufferLength: '65535', columnDef: 'G', columnName: 'rating' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_special_features:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '1', tableCat: 'sakila', typeName: 'SET', ordinalPosition: '12', tableName: 'film', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '54', isNullable: 'YES', bufferLength: '65535', columnName: 'special_features' }
+    ) 
+CREATE (t_film)-[:HAS_COLUMN]->(t_film_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '13', tableName: 'film', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_film_actor)-[:HAS_COLUMN]->(t_film_actor_actor_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '1', tableName: 'film_actor', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'actor_id' }
+    ) 
+CREATE (t_film_actor)-[:HAS_COLUMN]->(t_film_actor_film_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '2', tableName: 'film_actor', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'film_id' }
+    ) 
+CREATE (t_film_actor)-[:HAS_COLUMN]->(t_film_actor_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '3', tableName: 'film_actor', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_film_category)-[:HAS_COLUMN]->(t_film_category_film_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '1', tableName: 'film_category', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'film_id' }
+    ) 
+CREATE (t_film_category)-[:HAS_COLUMN]->(t_film_category_category_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '2', tableName: 'film_category', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'category_id' }
+    ) 
+CREATE (t_film_category)-[:HAS_COLUMN]->(t_film_category_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '3', tableName: 'film_category', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_film_text)-[:HAS_COLUMN]->(t_film_text_film_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '1', tableName: 'film_text', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'film_id' }
+    ) 
+CREATE (t_film_text)-[:HAS_COLUMN]->(t_film_text_title:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '2', tableName: 'film_text', sqlDataType: '0', charOctetLength: '255', sqlDatetimeSub: '0', columnSize: '255', isNullable: 'NO', bufferLength: '65535', columnName: 'title' }
+    ) 
+CREATE (t_film_text)-[:HAS_COLUMN]->(t_film_text_description:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '-1', tableCat: 'sakila', typeName: 'TEXT', ordinalPosition: '3', tableName: 'film_text', sqlDataType: '0', charOctetLength: '65535', sqlDatetimeSub: '0', columnSize: '65535', isNullable: 'YES', bufferLength: '65535', columnName: 'description' }
+    ) 
+CREATE (t_inventory)-[:HAS_COLUMN]->(t_inventory_inventory_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '4', tableCat: 'sakila', typeName: 'MEDIUMINT UNSIGNED', ordinalPosition: '1', tableName: 'inventory', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '8', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'inventory_id' }
+    ) 
+CREATE (t_inventory)-[:HAS_COLUMN]->(t_inventory_film_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '2', tableName: 'inventory', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'film_id' }
+    ) 
+CREATE (t_inventory)-[:HAS_COLUMN]->(t_inventory_store_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '3', tableName: 'inventory', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'store_id' }
+    ) 
+CREATE (t_inventory)-[:HAS_COLUMN]->(t_inventory_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '4', tableName: 'inventory', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_language)-[:HAS_COLUMN]->(t_language_language_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '1', tableName: 'language', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'language_id' }
+    ) 
+CREATE (t_language)-[:HAS_COLUMN]->(t_language_name:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '1', tableCat: 'sakila', typeName: 'CHAR', ordinalPosition: '2', tableName: 'language', sqlDataType: '0', charOctetLength: '20', sqlDatetimeSub: '0', columnSize: '20', isNullable: 'NO', bufferLength: '65535', columnName: 'name' }
+    ) 
+CREATE (t_language)-[:HAS_COLUMN]->(t_language_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '3', tableName: 'language', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_payment)-[:HAS_COLUMN]->(t_payment_payment_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '1', tableName: 'payment', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'payment_id' }
+    ) 
+CREATE (t_payment)-[:HAS_COLUMN]->(t_payment_customer_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '2', tableName: 'payment', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'customer_id' }
+    ) 
+CREATE (t_payment)-[:HAS_COLUMN]->(t_payment_staff_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '3', tableName: 'payment', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'staff_id' }
+    ) 
+CREATE (t_payment)-[:HAS_COLUMN]->(t_payment_rental_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '4', tableCat: 'sakila', typeName: 'INT', ordinalPosition: '4', tableName: 'payment', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '10', isNullable: 'YES', bufferLength: '65535', decimalDigits: '0', columnName: 'rental_id' }
+    ) 
+CREATE (t_payment)-[:HAS_COLUMN]->(t_payment_amount:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '3', tableCat: 'sakila', typeName: 'DECIMAL', ordinalPosition: '5', tableName: 'payment', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '2', columnName: 'amount' }
+    ) 
+CREATE (t_payment)-[:HAS_COLUMN]->(t_payment_payment_date:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'DATETIME', ordinalPosition: '6', tableName: 'payment', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnName: 'payment_date' }
+    ) 
+CREATE (t_payment)-[:HAS_COLUMN]->(t_payment_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '7', tableName: 'payment', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'YES', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_rental)-[:HAS_COLUMN]->(t_rental_rental_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '4', tableCat: 'sakila', typeName: 'INT', ordinalPosition: '1', tableName: 'rental', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '10', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'rental_id' }
+    ) 
+CREATE (t_rental)-[:HAS_COLUMN]->(t_rental_rental_date:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'DATETIME', ordinalPosition: '2', tableName: 'rental', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnName: 'rental_date' }
+    ) 
+CREATE (t_rental)-[:HAS_COLUMN]->(t_rental_inventory_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '4', tableCat: 'sakila', typeName: 'MEDIUMINT UNSIGNED', ordinalPosition: '3', tableName: 'rental', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '8', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'inventory_id' }
+    ) 
+CREATE (t_rental)-[:HAS_COLUMN]->(t_rental_customer_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '4', tableName: 'rental', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'customer_id' }
+    ) 
+CREATE (t_rental)-[:HAS_COLUMN]->(t_rental_return_date:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '93', tableCat: 'sakila', typeName: 'DATETIME', ordinalPosition: '5', tableName: 'rental', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'YES', bufferLength: '65535', columnName: 'return_date' }
+    ) 
+CREATE (t_rental)-[:HAS_COLUMN]->(t_rental_staff_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '6', tableName: 'rental', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'staff_id' }
+    ) 
+CREATE (t_rental)-[:HAS_COLUMN]->(t_rental_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '7', tableName: 'rental', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_staff)-[:HAS_COLUMN]->(t_staff_staff_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '1', tableName: 'staff', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'staff_id' }
+    ) 
+CREATE (t_staff)-[:HAS_COLUMN]->(t_staff_first_name:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '2', tableName: 'staff', sqlDataType: '0', charOctetLength: '45', sqlDatetimeSub: '0', columnSize: '45', isNullable: 'NO', bufferLength: '65535', columnName: 'first_name' }
+    ) 
+CREATE (t_staff)-[:HAS_COLUMN]->(t_staff_last_name:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '3', tableName: 'staff', sqlDataType: '0', charOctetLength: '45', sqlDatetimeSub: '0', columnSize: '45', isNullable: 'NO', bufferLength: '65535', columnName: 'last_name' }
+    ) 
+CREATE (t_staff)-[:HAS_COLUMN]->(t_staff_address_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '4', tableName: 'staff', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'address_id' }
+    ) 
+CREATE (t_staff)-[:HAS_COLUMN]->(t_staff_picture:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '-4', tableCat: 'sakila', typeName: 'BLOB', ordinalPosition: '5', tableName: 'staff', sqlDataType: '0', charOctetLength: '65535', sqlDatetimeSub: '0', columnSize: '65535', isNullable: 'YES', bufferLength: '65535', columnName: 'picture' }
+    ) 
+CREATE (t_staff)-[:HAS_COLUMN]->(t_staff_email:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '6', tableName: 'staff', sqlDataType: '0', charOctetLength: '50', sqlDatetimeSub: '0', columnSize: '50', isNullable: 'YES', bufferLength: '65535', columnName: 'email' }
+    ) 
+CREATE (t_staff)-[:HAS_COLUMN]->(t_staff_store_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '7', tableName: 'staff', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'store_id' }
+    ) 
+CREATE (t_staff)-[:HAS_COLUMN]->(t_staff_active:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '-7', tableCat: 'sakila', typeName: 'BIT', ordinalPosition: '8', tableName: 'staff', sqlDataType: '0', sqlDatetimeSub: '0', isNullable: 'NO', bufferLength: '65535', columnDef: '1', columnName: 'active' }
+    ) 
+CREATE (t_staff)-[:HAS_COLUMN]->(t_staff_username:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '9', tableName: 'staff', sqlDataType: '0', charOctetLength: '16', sqlDatetimeSub: '0', columnSize: '16', isNullable: 'NO', bufferLength: '65535', columnName: 'username' }
+    ) 
+CREATE (t_staff)-[:HAS_COLUMN]->(t_staff_password:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '1', dataType: '12', tableCat: 'sakila', typeName: 'VARCHAR', ordinalPosition: '10', tableName: 'staff', sqlDataType: '0', charOctetLength: '40', sqlDatetimeSub: '0', columnSize: '40', isNullable: 'YES', bufferLength: '65535', columnName: 'password' }
+    ) 
+CREATE (t_staff)-[:HAS_COLUMN]->(t_staff_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '11', tableName: 'staff', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+CREATE (t_store)-[:HAS_COLUMN]->(t_store_store_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'YES', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '1', tableName: 'store', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'store_id' }
+    ) 
+CREATE (t_store)-[:HAS_COLUMN]->(t_store_manager_staff_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '-6', tableCat: 'sakila', typeName: 'TINYINT UNSIGNED', ordinalPosition: '2', tableName: 'store', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '3', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'manager_staff_id' }
+    ) 
+CREATE (t_store)-[:HAS_COLUMN]->(t_store_address_id:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '5', tableCat: 'sakila', typeName: 'SMALLINT UNSIGNED', ordinalPosition: '3', tableName: 'store', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '5', isNullable: 'NO', bufferLength: '65535', decimalDigits: '0', columnName: 'address_id' }
+    ) 
+CREATE (t_store)-[:HAS_COLUMN]->(t_store_last_update:DBColumn 
+    { numPrecRadix: '10', isAutoincrement: 'NO', nullable: '0', dataType: '93', tableCat: 'sakila', typeName: 'TIMESTAMP', ordinalPosition: '4', tableName: 'store', sqlDataType: '0', sqlDatetimeSub: '0', columnSize: '19', isNullable: 'NO', bufferLength: '65535', columnDef: 'CURRENT_TIMESTAMP', columnName: 'last_update' }
+    ) 
+ 
+CREATE (t_actor)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'actor', columnName: 'actor_id' }
+    ]-(t_actor_actor_id)
+CREATE (t_address)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'address', columnName: 'address_id' }
+    ]-(t_address_address_id)
+CREATE (t_category)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'category', columnName: 'category_id' }
+    ]-(t_category_category_id)
+CREATE (t_city)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'city', columnName: 'city_id' }
+    ]-(t_city_city_id)
+CREATE (t_country)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'country', columnName: 'country_id' }
+    ]-(t_country_country_id)
+CREATE (t_customer)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'customer', columnName: 'customer_id' }
+    ]-(t_customer_customer_id)
+CREATE (t_film)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'film', columnName: 'film_id' }
+    ]-(t_film_film_id)
+CREATE (t_film_actor)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'film_actor', columnName: 'actor_id' }
+    ]-(t_film_actor_actor_id)
+CREATE (t_film_actor)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '2', tableName: 'film_actor', columnName: 'film_id' }
+    ]-(t_film_actor_film_id)
+CREATE (t_film_category)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '2', tableName: 'film_category', columnName: 'category_id' }
+    ]-(t_film_category_category_id)
+CREATE (t_film_category)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'film_category', columnName: 'film_id' }
+    ]-(t_film_category_film_id)
+CREATE (t_film_text)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'film_text', columnName: 'film_id' }
+    ]-(t_film_text_film_id)
+CREATE (t_inventory)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'inventory', columnName: 'inventory_id' }
+    ]-(t_inventory_inventory_id)
+CREATE (t_language)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'language', columnName: 'language_id' }
+    ]-(t_language_language_id)
+CREATE (t_payment)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'payment', columnName: 'payment_id' }
+    ]-(t_payment_payment_id)
+CREATE (t_rental)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'rental', columnName: 'rental_id' }
+    ]-(t_rental_rental_id)
+CREATE (t_staff)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'staff', columnName: 'staff_id' }
+    ]-(t_staff_staff_id)
+CREATE (t_store)<-[:IS_PK_COLUMN 
+    { tableCat: 'sakila', pkName: 'PRIMARY', keySeq: '1', tableName: 'store', columnName: 'store_id' }
+    ]-(t_store_store_id)
+
+
+CREATE (t_city_city_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_address_city', pktableName: 'city', deleteRule: '3', pkcolumnName: 'city_id', fktableCat: 'sakila', fkcolumnName: 'city_id', fktableName: 'address', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_address_city_id)
+CREATE (t_country_country_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_city_country', pktableName: 'country', deleteRule: '3', pkcolumnName: 'country_id', fktableCat: 'sakila', fkcolumnName: 'country_id', fktableName: 'city', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_city_country_id)
+CREATE (t_address_address_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_customer_address', pktableName: 'address', deleteRule: '3', pkcolumnName: 'address_id', fktableCat: 'sakila', fkcolumnName: 'address_id', fktableName: 'customer', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_customer_address_id)
+CREATE (t_store_store_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_customer_store', pktableName: 'store', deleteRule: '3', pkcolumnName: 'store_id', fktableCat: 'sakila', fkcolumnName: 'store_id', fktableName: 'customer', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_customer_store_id)
+CREATE (t_language_language_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_film_language', pktableName: 'language', deleteRule: '3', pkcolumnName: 'language_id', fktableCat: 'sakila', fkcolumnName: 'language_id', fktableName: 'film', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_film_language_id)
+CREATE (t_language_language_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_film_language_original', pktableName: 'language', deleteRule: '3', pkcolumnName: 'language_id', fktableCat: 'sakila', fkcolumnName: 'original_language_id', fktableName: 'film', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_film_original_language_id)
+CREATE (t_actor_actor_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_film_actor_actor', pktableName: 'actor', deleteRule: '3', pkcolumnName: 'actor_id', fktableCat: 'sakila', fkcolumnName: 'actor_id', fktableName: 'film_actor', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_film_actor_actor_id)
+CREATE (t_film_film_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_film_actor_film', pktableName: 'film', deleteRule: '3', pkcolumnName: 'film_id', fktableCat: 'sakila', fkcolumnName: 'film_id', fktableName: 'film_actor', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_film_actor_film_id)
+CREATE (t_category_category_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_film_category_category', pktableName: 'category', deleteRule: '3', pkcolumnName: 'category_id', fktableCat: 'sakila', fkcolumnName: 'category_id', fktableName: 'film_category', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_film_category_category_id)
+CREATE (t_film_film_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_film_category_film', pktableName: 'film', deleteRule: '3', pkcolumnName: 'film_id', fktableCat: 'sakila', fkcolumnName: 'film_id', fktableName: 'film_category', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_film_category_film_id)
+CREATE (t_film_film_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_inventory_film', pktableName: 'film', deleteRule: '3', pkcolumnName: 'film_id', fktableCat: 'sakila', fkcolumnName: 'film_id', fktableName: 'inventory', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_inventory_film_id)
+CREATE (t_store_store_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_inventory_store', pktableName: 'store', deleteRule: '3', pkcolumnName: 'store_id', fktableCat: 'sakila', fkcolumnName: 'store_id', fktableName: 'inventory', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_inventory_store_id)
+CREATE (t_customer_customer_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_payment_customer', pktableName: 'customer', deleteRule: '3', pkcolumnName: 'customer_id', fktableCat: 'sakila', fkcolumnName: 'customer_id', fktableName: 'payment', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_payment_customer_id)
+CREATE (t_rental_rental_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_payment_rental', pktableName: 'rental', deleteRule: '2', pkcolumnName: 'rental_id', fktableCat: 'sakila', fkcolumnName: 'rental_id', fktableName: 'payment', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_payment_rental_id)
+CREATE (t_staff_staff_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_payment_staff', pktableName: 'staff', deleteRule: '3', pkcolumnName: 'staff_id', fktableCat: 'sakila', fkcolumnName: 'staff_id', fktableName: 'payment', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_payment_staff_id)
+CREATE (t_customer_customer_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_rental_customer', pktableName: 'customer', deleteRule: '3', pkcolumnName: 'customer_id', fktableCat: 'sakila', fkcolumnName: 'customer_id', fktableName: 'rental', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_rental_customer_id)
+CREATE (t_inventory_inventory_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_rental_inventory', pktableName: 'inventory', deleteRule: '3', pkcolumnName: 'inventory_id', fktableCat: 'sakila', fkcolumnName: 'inventory_id', fktableName: 'rental', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_rental_inventory_id)
+CREATE (t_staff_staff_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_rental_staff', pktableName: 'staff', deleteRule: '3', pkcolumnName: 'staff_id', fktableCat: 'sakila', fkcolumnName: 'staff_id', fktableName: 'rental', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_rental_staff_id)
+CREATE (t_address_address_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_staff_address', pktableName: 'address', deleteRule: '3', pkcolumnName: 'address_id', fktableCat: 'sakila', fkcolumnName: 'address_id', fktableName: 'staff', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_staff_address_id)
+CREATE (t_store_store_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_staff_store', pktableName: 'store', deleteRule: '3', pkcolumnName: 'store_id', fktableCat: 'sakila', fkcolumnName: 'store_id', fktableName: 'staff', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_staff_store_id)
+CREATE (t_address_address_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_store_address', pktableName: 'address', deleteRule: '3', pkcolumnName: 'address_id', fktableCat: 'sakila', fkcolumnName: 'address_id', fktableName: 'store', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_store_address_id)
+CREATE (t_staff_staff_id)<-[:IS_FK_COLUMN 
+    { deferrability: '7', fkName: 'fk_store_staff', pktableName: 'staff', deleteRule: '3', pkcolumnName: 'staff_id', fktableCat: 'sakila', fkcolumnName: 'manager_staff_id', fktableName: 'store', keySeq: '1', updateRule: '0', pktableCat: 'sakila' }
+    ]-(t_store_manager_staff_id)
+
 
 ----
 
