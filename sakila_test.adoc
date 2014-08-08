@@ -12,7 +12,7 @@ This presents a first sketch of a data model that incorporates the "CONS" notion
 //table
 
 
-
+//hide
 [source,cypher]
 
 ----
