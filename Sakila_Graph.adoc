@@ -1,0 +1,59 @@
+:CmA: CommonAccord
+:Cmorg: http://beta.commonaccord.org
+:kv: key/value
+
+:forteile: vorteile 
+
+= Model Agt Frame
+
+
+//graph
+//table
+
+
+[source,cypher]
+
+----
+
+CREATE (t_actor :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'actor' })
+CREATE (t_address :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'address' })
+CREATE (t_category :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'category' })
+CREATE (t_city :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'city' })
+CREATE (t_country :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'country' })
+CREATE (t_customer :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'customer' })
+CREATE (t_film :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'film' })
+CREATE (t_film_actor :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'film_actor' })
+CREATE (t_film_category :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'film_category' })
+CREATE (t_film_text :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'film_text' })
+CREATE (t_inventory :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'inventory' })
+CREATE (t_language :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'language' })
+CREATE (t_payment :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'payment' })
+CREATE (t_rental :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'rental' })
+CREATE (t_staff :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'staff' })
+CREATE (t_store :DBTable { tableCat: 'sakila', tableType: 'TABLE', tableName: 'store' })
+
+----
+
+
+== This Approach (A1)
+
+This is an extremely atomized approach to spans.  
+
+== Another Approach (A2)
+
+A different one would put all the {kv}s into a single node, either as (A2.1) a single string (value:'key1=value1<>key2=value2') or as (A2.2) individual attributes ( {key1='value1', key2='value2'}). 
+
+== Analysis (so to speak)
+
+There are front parts and back parts ({forteile} und nachteile) for both A1 and A2 solutions.  A2 is like beta.{cma}.org.   A2.2  has the disadvantage that there appears to be no Cypher search that returns the list of attributes.
+
+* BTW The AsciiDoc native "attribute" function at gist.neo4j seems fussier than at github.  (F1) Error if the attribute is defined after the use.  (F2) spacing -  (F2.1) new line and (F2.2) space following second colon.
+
+* (@hazardj)-[:SUGGEST {text: 'If an attribute could contain a call for another attribute and formatting, we'd be mostly there.'}]->(@mojavelinux)
+
+== Next Steps
+
+Aggregate Lists and establish priority (recursive, depth-first) as among Spans with the same names.
+
+@hazardj remembers how to do git coding locally instead of through github browser interface. 
+
